@@ -1,5 +1,3 @@
-import fs from "fs/promises";
+import initClient from "./client.js";
 
-const data = [];
-
-fs.writeFile("data.json", JSON.stringify(data, null, 2));
+initClient();
