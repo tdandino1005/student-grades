@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { model, Schema } from "mongoose";
 import gradeSchema from "./grade-schema.js";
 
 const studentSchema = new Schema(
@@ -18,3 +18,7 @@ const studentSchema = new Schema(
     versionKey: false,
   }
 );
+
+// TODO: Prevent duplicate grade names (use a custom hook)
+
+export default model("Student", studentSchema);
