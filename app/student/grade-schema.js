@@ -25,3 +25,5 @@ const gradeSchema = new Schema({
     required: [true, "Possible points are required"],
   },
 });
+
+export default gradeSchema;
