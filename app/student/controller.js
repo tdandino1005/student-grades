@@ -1,4 +1,3 @@
-import initClient from "../client.js";
 import Student from "./Student.js";
 
 const controller = {
@@ -15,8 +14,6 @@ const controller = {
   },
   // Add a method to create a new student
 };
-
-await initClient();
 
 controller
   .index()
